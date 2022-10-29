@@ -288,15 +288,18 @@ img {
 }
 
 /* ====== EDUCATION AND EXPERIENCE ======= */
-.education-content {
+.education-content,
+.experience-content {
     display: flex;
 }
 
-.education-time {
+.education-time,
+.experience-time {
     padding-right: 1rem;
 }
 
-.education-rounder {
+.education-rounder,
+.experience-rounder {
     position: relative;
     display: block;
     width: 16px;
@@ -306,7 +309,8 @@ img {
     margin-top: .25rem;
 }
 
-.education-line{
+.education-line,
+.experience-line{
     display: block;
     width: 2px;
     height: 110%;
@@ -314,18 +318,22 @@ img {
     transform: translate(7px, 0);
 }
 
-.education-data{
+.education-data,
+.experience-data{
     gap: .5rem;
 }
 
-.education-title{
+.education-title,
+.experience-title{
     font-size: var(--h3-font-size);   
 }
-.education-studies{
+.education-studies,
+.experience-company{
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
-.education-year{
+.education-year,
+.experience-description{
     font-size: var(--smaller-font-size);
 }
 
@@ -347,3 +355,9 @@ img {
     border-radius: 50%;
     margin-right: .75rem;
 }
+
+/* ======== CERTIFICATES ============ */
+
+/* ======== REFERENCES ============ */
+
+/* ======== INTERESTS ============ */
