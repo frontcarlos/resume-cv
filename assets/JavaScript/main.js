@@ -86,3 +86,33 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// ===== REDUCE THE SIZE AND PRINT ON AN A4 SHEET =====
+
+function scaleCv() {
+    document.body.classList.add('scale-cv')
+}
+
+// ===== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED =====
+
+function removeScale() {
+    document.body.classList.remove('scale-cv')
+}
+
+// ===== GENERATE PDF =====
+// PDF generated area
+
+let resumeButton = document.getElementById('resume-button')
+
+// Html2pdf options
+
+// Function to call areaCv and Html2Pdf options
+
+// When the button is clicked, it executes the three funcions
+resumeButton.addEventListener('click', () => {
+    // 1. The class .scale-cv is added to the body, where it reduces the size of the
+    scaleCv()
+    // 2. The PDF is generated
+
+    // 3. The .scaleCv class is removed from the body after 5 seconds to return to
+})
