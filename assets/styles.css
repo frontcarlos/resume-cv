@@ -310,7 +310,7 @@ img {
 }
 
 .education-line,
-.experience-line{
+.experience-line {
     display: block;
     width: 2px;
     height: 110%;
@@ -319,35 +319,42 @@ img {
 }
 
 .education-data,
-.experience-data{
+.experience-data {
     gap: .5rem;
 }
 
 .education-title,
-.experience-title{
-    font-size: var(--h3-font-size);   
+.experience-title {
+    font-size: var(--h3-font-size);
 }
+
 .education-studies,
-.experience-company{
+.experience-company {
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
+
 .education-year,
-.experience-description{
+.experience-description {
     font-size: var(--smaller-font-size);
 }
 
 /* ======== SKILLS AND LANGUAGES ============ */
-.skills-content{
+.skills-content,
+.languages-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
 }
-.skills-name{
+
+.skills-name,
+.languages-name {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
-.skills-circle{
+
+.skills-circle,
+.languages-circle {
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -357,10 +364,64 @@ img {
 }
 
 /* ======== CERTIFICATES ============ */
-.certificate-title{
+.certificate-title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
 }
+
 /* ======== REFERENCES ============ */
+.reference-content {
+    gap: .25rem;
+}
+
+.reference-subtitle {
+    color: var(--text-color-light);
+}
+
+.reference-subtitle,
+.reference-contact {
+    font-size: var(--smaller-font-size);
+}
+
+.reference-title {
+    font-size: var(--h3-font-size);
+}
 
 /* ======== INTERESTS ============ */
+.interests-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--mb-2);
+}
+
+.interests-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests-icon{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
+}
+
+/* Scroll Top */
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color-alt);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    /* visibility: hidden; */
+}
+.scrolltop-icon{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+/* ======== MEDIA QUERIES ============ */
