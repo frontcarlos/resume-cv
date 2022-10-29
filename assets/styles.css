@@ -418,10 +418,14 @@ img {
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .scrolltop-icon{
     font-size: 1.2rem;
     color: var(--text-color);
+}
+.show-scroll{
+    visibility: visible;
+    bottom: 5rem;
 }
 /* ======== MEDIA QUERIES ============ */
