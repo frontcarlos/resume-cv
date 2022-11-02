@@ -499,7 +499,9 @@ img {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
 }
-
+.certificate-content{
+    margin-bottom: var(--mb-1);
+}
 /* ======== REFERENCES ============ */
 .reference-content {
     gap: .25rem;
